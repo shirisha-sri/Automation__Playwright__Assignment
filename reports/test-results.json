@@ -1,0 +1,445 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\playwright.config.js",
+    "rootDir": "C:/Users/shirisha.s/Downloads/Playwright_Automation-Assignment/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "reports/html-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/shirisha.s/Downloads/Playwright_Automation-Assignment/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "Google Chrome",
+        "name": "Google Chrome",
+        "testDir": "C:/Users/shirisha.s/Downloads/Playwright_Automation-Assignment/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "formUpload.spec.js",
+      "file": "formUpload.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Create Form with File Upload",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15660,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n\n    at LoginPage.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js:16:38)\n    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\formUpload.spec.js:11:19",
+                    "location": {
+                      "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                      "column": 38,
+                      "line": 16
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\loginPage.js:16\n\n\u001b[0m \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m,\u001b[39m password) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                        "column": 38,
+                        "line": 16
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\loginPage.js:16\n\n\u001b[0m \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m,\u001b[39m password) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js:16:38)\u001b[22m\n\u001b[2m    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\formUpload.spec.js:11:19\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-09-09T16:07:04.711Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\formUpload-Create-Form-with-File-Upload-Google-Chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\formUpload-Create-Form-with-File-Upload-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\formUpload-Create-Form-with-File-Upload-Google-Chrome\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                    "column": 38,
+                    "line": 16
+                  }
+                },
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15404,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n\n    at LoginPage.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js:16:38)\n    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\formUpload.spec.js:11:19",
+                    "location": {
+                      "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                      "column": 38,
+                      "line": 16
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\loginPage.js:16\n\n\u001b[0m \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m,\u001b[39m password) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                        "column": 38,
+                        "line": 16
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\loginPage.js:16\n\n\u001b[0m \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m,\u001b[39m password) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js:16:38)\u001b[22m\n\u001b[2m    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\formUpload.spec.js:11:19\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-09-09T16:07:33.286Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\formUpload-Create-Form-with-File-Upload-Google-Chrome-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\formUpload-Create-Form-with-File-Upload-Google-Chrome-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\formUpload-Create-Form-with-File-Upload-Google-Chrome-retry1\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                    "column": 38,
+                    "line": 16
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8bcce67521683dd84cd3-8b52154512365e3c8155",
+          "file": "formUpload.spec.js",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "learningInstanceApi.spec.js",
+      "file": "learningInstanceApi.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Create and Validate Learning Instance API",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 1162,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n    at ApiHelper.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\utils\\apiHelper.js:11:31)\n    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\learningInstanceApi.spec.js:7:30",
+                    "location": {
+                      "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\utils\\apiHelper.js",
+                      "column": 31,
+                      "line": 11
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\utils\\apiHelper.js:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m context \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({ baseURL\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mbaseURL })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mpost(\u001b[32m\"/api/login\"\u001b[39m\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m { username\u001b[33m,\u001b[39m password } })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mreturn\u001b[39m { token\u001b[33m:\u001b[39m body\u001b[33m.\u001b[39mtoken\u001b[33m,\u001b[39m context }\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m   }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\utils\\apiHelper.js",
+                        "column": 31,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\utils\\apiHelper.js:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m context \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({ baseURL\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mbaseURL })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mpost(\u001b[32m\"/api/login\"\u001b[39m\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m { username\u001b[33m,\u001b[39m password } })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mreturn\u001b[39m { token\u001b[33m:\u001b[39m body\u001b[33m.\u001b[39mtoken\u001b[33m,\u001b[39m context }\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m   }\u001b[0m\n\u001b[2m    at ApiHelper.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\utils\\apiHelper.js:11:31)\u001b[22m\n\u001b[2m    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\learningInstanceApi.spec.js:7:30\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-09-09T16:07:04.734Z",
+                  "annotations": [],
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\utils\\apiHelper.js",
+                    "column": 31,
+                    "line": 11
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 1244,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n    at ApiHelper.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\utils\\apiHelper.js:11:31)\n    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\learningInstanceApi.spec.js:7:30",
+                    "location": {
+                      "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\utils\\apiHelper.js",
+                      "column": 31,
+                      "line": 11
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\utils\\apiHelper.js:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m context \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({ baseURL\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mbaseURL })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mpost(\u001b[32m\"/api/login\"\u001b[39m\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m { username\u001b[33m,\u001b[39m password } })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mreturn\u001b[39m { token\u001b[33m:\u001b[39m body\u001b[33m.\u001b[39mtoken\u001b[33m,\u001b[39m context }\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m   }\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\utils\\apiHelper.js",
+                        "column": 31,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m403\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\utils\\apiHelper.js:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m     \u001b[36mconst\u001b[39m context \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({ baseURL\u001b[33m:\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mbaseURL })\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m     \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mpost(\u001b[32m\"/api/login\"\u001b[39m\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m { username\u001b[33m,\u001b[39m password } })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBe(\u001b[35m200\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mreturn\u001b[39m { token\u001b[33m:\u001b[39m body\u001b[33m.\u001b[39mtoken\u001b[33m,\u001b[39m context }\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m   }\u001b[0m\n\u001b[2m    at ApiHelper.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\utils\\apiHelper.js:11:31)\u001b[22m\n\u001b[2m    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\learningInstanceApi.spec.js:7:30\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-09-09T16:07:13.333Z",
+                  "annotations": [],
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\utils\\apiHelper.js",
+                    "column": 31,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8bf7044d804582b2aac8-97d102dd8b735461a25f",
+          "file": "learningInstanceApi.spec.js",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "messageBox.spec.js",
+      "file": "messageBox.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Create Message Box Task",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 14760,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n\n    at LoginPage.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js:16:38)\n    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\messageBox.spec.js:11:19",
+                    "location": {
+                      "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                      "column": 38,
+                      "line": 16
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\loginPage.js:16\n\n\u001b[0m \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m,\u001b[39m password) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                        "column": 38,
+                        "line": 16
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\loginPage.js:16\n\n\u001b[0m \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m,\u001b[39m password) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js:16:38)\u001b[22m\n\u001b[2m    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\messageBox.spec.js:11:19\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-09-09T16:07:04.883Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\messageBox-Create-Message-Box-Task-Google-Chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\messageBox-Create-Message-Box-Task-Google-Chrome\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\messageBox-Create-Message-Box-Task-Google-Chrome\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                    "column": 38,
+                    "line": 16
+                  }
+                },
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 14954,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n\n    at LoginPage.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js:16:38)\n    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\messageBox.spec.js:11:19",
+                    "location": {
+                      "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                      "column": 38,
+                      "line": 16
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\loginPage.js:16\n\n\u001b[0m \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m,\u001b[39m password) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                        "column": 38,
+                        "line": 16
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  getByLabel('Username')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Username')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\loginPage.js:16\n\n\u001b[0m \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m   \u001b[36masync\u001b[39m login(username\u001b[33m,\u001b[39m password) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39musernameInput\u001b[33m.\u001b[39mfill(username)\u001b[33m;\u001b[39m\n \u001b[90m 18 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mloginButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.login (C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js:16:38)\u001b[22m\n\u001b[2m    at C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\tests\\messageBox.spec.js:11:19\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2025-09-09T16:07:34.754Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\messageBox-Create-Message-Box-Task-Google-Chrome-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\messageBox-Create-Message-Box-Task-Google-Chrome-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\test-results\\messageBox-Create-Message-Box-Task-Google-Chrome-retry1\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\shirisha.s\\Downloads\\Playwright_Automation-Assignment\\pages\\loginPage.js",
+                    "column": 38,
+                    "line": 16
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "22175aeb664bd54555dc-b397a05315881ebab3f3",
+          "file": "messageBox.spec.js",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-09-09T16:06:59.571Z",
+    "duration": 59129.168,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
