@@ -1,0 +1,13 @@
+{
+  "name": "playwright-automation-assignment",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test tests/messageBox.spec.js tests/formUpload.spec.js",
+    "test:api": "npx playwright test tests/learningInstanceApi.spec.js",
+    "report": "npx playwright show-report reports/html-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
