@@ -1,5 +1,5 @@
 {
-  "name": "playwright-automation-assignment",
+  "name": "automation-assignment",
   "version": "1.0.0",
   "scripts": {
     "test": "npx playwright test",
